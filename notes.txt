@@ -1,0 +1,18 @@
+Java Notes:
+
+- button to select 2 player or one player mode (taco master) - either toggle or radio button
+- 1 player plays against computer, can computer return random result?
+- player one defaults to X value, player two or computer defaults to O value
+- define winning strategies, and display a you win taco
+
+Bonus Goals:
+
+- keep track of 3 moves in a row for a winner
+- can you keep track of wins per session (maybe an event listener for how long?)
+
+
+Design Notes:
+
+- game board needs to scaled for small media
+- font size needs to scale at different media query size
+- Taco displays when someone wins. ?!

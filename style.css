@@ -1,0 +1,58 @@
+/* Tic Tac Toe 
+Wyoming Telford */
+
+/**/
+
+/* table-row css */
+
+.square {
+	height: 0px;
+	padding-bottom: 33%;
+}
+.xClass {
+	font-size: 4em;
+	
+}
+
+.oClass {
+	font-size: 4em;
+
+}
+.topRow {
+	border-bottom: 2px solid #ccc;
+	
+}
+.midRow {
+	border-bottom: 2px solid #ccc;
+}
+.bottomRow {
+	
+}
+.right {
+	border-right: 2px solid #ccc;
+	
+}
+.left {
+	border-left: 2px solid #ccc;
+	
+}
+.page-header {
+	border-bottom:none;
+	padding-bottom: 10px;
+}
+.resetButton {
+	margin-top: 40px;
+	height:0px;
+	border-bottom: 30%;
+}
+
+@media (max-width: 970px) {
+    .square{
+    	font-size: 48px;
+    }
+}
+@media (max-width: 500px) {
+    .square{
+    	font-size: 24px;
+    }
+}
