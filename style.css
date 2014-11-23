@@ -1,10 +1,33 @@
 /* Tic Tac Toe 
 Wyoming Telford */
 
-/**/
+/*overall styles*/
+body {
+	background: url(mariachi.png)no-repeat center center fixed;
 
+	 -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+
+			  font-family: 'Peralta', cursive;
+
+}
+img {
+	opacity: 0.3;
+}
+h1 {
+	color: #f5e13c ;
+	font-size: 3.5em;
+	
+}
 /* table-row css */
 
+.reset {
+	color: #cf0d24;
+	background-color: #f5e13c;
+	border-color: #f5e13c;
+}
 .square {
 	height: 0px;
 	padding-bottom: 33%;
@@ -19,21 +42,21 @@ Wyoming Telford */
 
 }
 .topRow {
-	border-bottom: 2px solid #ccc;
+	border-bottom: 4px solid #cf0d24;
 	
 }
 .midRow {
-	border-bottom: 2px solid #ccc;
+	border-bottom: 4px solid #cf0d24;
 }
 .bottomRow {
 	
 }
 .right {
-	border-right: 2px solid #ccc;
+	border-right: 4px solid #cf0d24;
 	
 }
 .left {
-	border-left: 2px solid #ccc;
+	border-left: 4px solid #cf0d24;
 	
 }
 .page-header {
@@ -41,10 +64,14 @@ Wyoming Telford */
 	padding-bottom: 10px;
 }
 .resetButton {
+
+	font-size: 1.5em;
 	margin-top: 40px;
 	height:0px;
 	border-bottom: 30%;
 }
+
+/* media query styles */
 
 @media (max-width: 970px) {
     .square{
@@ -55,4 +82,32 @@ Wyoming Telford */
     .square{
     	font-size: 24px;
     }
+    .topRow {
+	border-bottom: 2px solid #cf0d24;
+	
+}
+.midRow {
+	border-bottom: 2px solid #cf0d24;
+}
+.bottomRow {
+	
+}
+.right {
+	border-right: 2px solid #cf0d24;
+	
+}
+.left {
+	border-left: 2px solid #cf0d24;
+	
+}
+.resetButton {
+	font-size: 1em;
+	margin-top: 40px;
+	height:0px;
+	border-bottom: 30%;
+}
+h1 {
+	color: #f5e13c ;
+	font-size: 2.5em;
+}
 }

@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			if (this.classList.contains('.play') === false){
 				count ++;
 				this.classList.add('.play')
-				this.innerText = (count % 2 == 1) ? "x" : "o";
-				this.style.color = (count % 2 == 1) ? "blue" : "red";
+				this.innerText = (count % 2 == 1) ? "X" : "O";
+				this.style.color = (count % 2 == 1) ? "#f5e13c" : "#cf0d24";
 			} else { alert("please play a square that hasn't been played")}
 		})
 		
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
 reset.addEventListener("click", function(){
 		for (var i = 0; i<cellBlock.length; i++) {
 			cellBlock[i].innerHTML = " &nbsp;";
-			cellBlock[i].classList.remove(".play");
+			window.location.reload();
 		}
 	})
 	});
