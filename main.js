@@ -18,17 +18,23 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	var cellBlock = document.querySelectorAll(".cellBlock");
 	var count = 0 
+	var reset = document.querySelector(".reset");
 
 	for(var i =0; i <cellBlock.length; i++){
 		cellBlock[i].addEventListener('click', function(){
-			//if (this.classList.contains('.play') === false){
+			if (this.classList.contains('.play') === false){
 				count ++;
 				this.classList.add('.play')
 				this.innerText = (count % 2 == 1) ? "x" : "o";
 				this.style.color = (count % 2 == 1) ? "blue" : "red";
-			//} else { alert("hi jerks")}
+			} else { alert("please play a square that hasn't been played")}
 		})
-		//if (this.classList.contains('play') === false){
-		//} 	else { alert("hi jerks")}	
+		
 	}
+reset.addEventListener("click", function(){
+		for (var i = 0; i<cellBlock.length; i++) {
+			cellBlock[i].innerHTML = " &nbsp;";
+			cellBlock[i].classList.remove(".play");
+		}
+	})
 	});
