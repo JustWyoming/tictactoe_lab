@@ -33,6 +33,16 @@ reset.on('click', function(){
 				(cellBlock[winGame[j][1]].innerText === cellBlock[winGame[j][0]].innerText) && 
 				(cellBlock[winGame[j][2]].innerText === cellBlock[winGame[j][0]].innerText)) {
 				alert(cellBlock[winGame[j][1]].innerText + " wins a taco!");
+			// goal is to float a taco win image in place of alert with the __ wins a taco line. it would load ideally into the cellBlock
+			// maybe using append? needs to turn off and reset to regular cellBlock game screen when clicked, or after a duration of time. 
+			// does image need to be hidden in css until activated by load function? or would I use delay and queue?
+			// cellBlock[winGame[j][1]].animate({ url(tacodeath.jpg)
+   // 									 	opacity: 0.25,
+   //  									left: "+=50",
+   //  									height: "toggle"
+  	// 									}, 5000, function() {
+   //  											Animation complete.
+  	// 											});
 			gameOver = true
 				return cellBlock[winGame[j][1]].innerText;
 			}    
