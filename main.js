@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function(){
 	var reset = document.querySelector(".reset")
 	var winGame = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], 
 	[1,4,7], [2,5,8], [0,4,8], [2,4,6]];
-
+	var gameOver = "";
 
 	for(var i =0; i <cellBlock.length; i++){
 		cellBlock[i].addEventListener('click', function(){
+			if (gameOver === true) { return alert("there is already a winner, please reset.");}
 			if (this.classList.contains('.play') === false){
 				count ++;
 				this.classList.add('.play')
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				(cellBlock[winGame[j][1]].innerText === cellBlock[winGame[j][0]].innerText) && 
 				(cellBlock[winGame[j][2]].innerText === cellBlock[winGame[j][0]].innerText)) {
 				alert(cellBlock[winGame[j][1]].innerText + " wins a taco!");
+			gameOver = true
 				return cellBlock[winGame[j][1]].innerText;
 			}    
 		}
